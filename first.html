@@ -11,24 +11,58 @@
             padding: 20px;
             background-color: #f4f4f9;
         }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+        .header {
+  width: 600px;
+  height: 60px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+        .content1 {
+  text-align: justify;
+  font-size: 19px;
+}
     </style>
 </head>
 <body>
-    <h1>Welcome to My Quick HTML Page</h1>
-    <p>This is a simple example of an HTML file.</p>
-    <a href="https://www.google.com" target="_blank">Click here to go to Google</a>
+    <div class="header">
+  <h1>Summary</h1>
+</div>
+
+<img
+  src="{% static 'TL/summary.png' %}"
+  style="width: 800px; display: block; margin: 20px auto"
+/>
+<br />
+<div class="content1" style="max-width: 900px; margin: 0 auto; font-size: 17px">
+  <p>
+    <strong>Earnings:</strong> The mover who occupies the position,
+    <i>the occupant</i>, earns 103 points at the end of Stage
+    3.
+    <br />
+    The mover who does not occupy the position, <i>the non-occupant</i>, earns
+    63 points at the end of Stage 3 .
+  </p>
+
+  <p>
+    If Mover B has occupied the position, and Mover A chooses
+    <u>not to reduce</u> Mover B's points:<br />
+    Mover B, <i>the occupant</i>, earns 103 - 0 = {103 points at the end of Stage 3;<br />
+    Mover A, <i>the non-occupant</i>, earns 63 - 0 = 63 points at the end of Stage 3.
+  </p>
+
+  <p>
+    If Mover B has occupied the position, and Mover A chooses
+    <u>to reduce</u> Mover B's points:<br />
+    Mover B, <i>the occupant</i>, earns 103 -
+    50 = 53 points at the end
+    of Stage 3;<br />
+    Mover A, <i>the non-occupant</i>, earns 63 -
+    10 = 53 points at the end of
+    Stage 3.
+  </p>
+</div>
 </body>
 </html>
